@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { Header } from './Header/Header';
 import { Modal }  from './Modal/Modal';
+import { ToDoList } from './ToDoList/ToDoList';
 
 export class App extends Component{
 
@@ -25,6 +26,8 @@ export class App extends Component{
       }
 
       <Header showModal={this.showModal}/>
+      <ToDoList/>
+
 
      
     </div>
