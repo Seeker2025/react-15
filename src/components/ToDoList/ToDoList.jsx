@@ -3,12 +3,17 @@ import todo from '../../todo.json';
 import css from './ToDoList.module.css';
 import { nanoid } from 'nanoid';
 import { FormToDo } from '../FormToDo/FormToDo';
+import { ToDo } from '../ToDo/ToDo';
 
 export class ToDoList extends Component{
     state = {
         todoList: todo,
         isDelete: false,
         isCreare: false,
+    }
+
+    componentDidMount(){
+
     }
 
     addToDo = (value) =>{
@@ -45,6 +50,17 @@ export class ToDoList extends Component{
                 </div>
             }
                 <FormToDo addToDo={this.addToDo}/>
+
+{
+    this.state.todoList && (<ul className={css.listGroup}>
+        {this.state.todoList.map((map)=>(
+            <ToDo/>
+        ))}
+
+
+
+    </ul>)
+}
           </>  
         );
     }

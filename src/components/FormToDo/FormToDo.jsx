@@ -6,11 +6,9 @@ export class FormToDo extends Component{
     }
 
     handleChange = ({ target })=>{
-        this.setState = ({ target })=>{
-            this.setState({
-                [target.name]: target.value
-            })
-        }
+        this.setState({ 
+            [target.name]: target.value
+         })     
     }
 
     handleSubmit =(e)=>{
@@ -36,7 +34,7 @@ export class FormToDo extends Component{
                 type = "text"
                 id = "exampleInputEmail"
                 onChange = {this.handleChange}
-                value = {this.state.email}
+                value = {this.state.todo}
                 />
 
                 </div>
