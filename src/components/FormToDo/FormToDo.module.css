@@ -1,0 +1,11 @@
+button.formSubmitBtn{
+
+    padding: 7px 10px;
+    margin: 0 10px;
+    width: 145px;
+    background-color: rgb(57, 139, 253);
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    
+}

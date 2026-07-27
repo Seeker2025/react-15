@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import css from './FormToDo.module.css';
 
 export class FormToDo extends Component{
     state = {
@@ -40,6 +41,7 @@ export class FormToDo extends Component{
                 </div>
 
                 <button
+                    className={css.formSubmitBtn}
                     type = "submit"
                 >Add to-do</button>
 
